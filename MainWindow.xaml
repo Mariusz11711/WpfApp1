@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox Name="Txt_field" HorizontalAlignment="Center" Height="40" Margin="0,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+        <Label Name="TxtLabel" Content="Wpisz tekst:" HorizontalAlignment="Left" Height="30" Margin="75,114,0,0" VerticalAlignment="Top" Width="165"/>
+        <Label Name="ValueLabel" Content="Szukana wartość:" HorizontalAlignment="Left" Margin="75,199,0,0" VerticalAlignment="Top" Width="165" RenderTransformOrigin="0.5,-0.193"/>
+        <TextBox Name="Value_field" HorizontalAlignment="Center" Height="40" Margin="0,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+        <RadioButton Name="Equal" Content="Równa sie"  IsChecked="True" HorizontalAlignment="Left" Margin="80,254,0,0" VerticalAlignment="Top"/>
+        <RadioButton Name="Begin" Content="Zaczyna sie" HorizontalAlignment="Left" Margin="196,254,0,0" VerticalAlignment="Top" />
+        <RadioButton Name="End" Content="Konczy sie" HorizontalAlignment="Left" Margin="311,254,0,0" VerticalAlignment="Top" />
+        <RadioButton Name="Cont" Content="Zawiera" HorizontalAlignment="Left" Margin="420,254,0,0" VerticalAlignment="Top" />
+        <Label Content="WYNIK:" HorizontalAlignment="Left" Height="40" Margin="560,104,0,0" VerticalAlignment="Top" Width="140"/>
+        <Label Name="ReturnValue" Content="Brak" HorizontalAlignment="Left" Margin="560,143,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.395,0.002" Width="110" Height="36"/>
+        <Button Content="Porownaj" HorizontalAlignment="Left" Margin="80,304,0,0" VerticalAlignment="Top" Width="120" Height="40" Click="Button_Click"/>
+        <CheckBox Name="CaseSensitive" Content="Uwzglednij wielkosc liter" HorizontalAlignment="Left" Margin="240,314,0,0" VerticalAlignment="Top" Height="20" RenderTransformOrigin="0.42,0.752" Width="165"/>
+
+    </Grid>
+</Window>
